@@ -3,9 +3,9 @@ class Dower {
         println(add(a,b))
     }
 
-    fun looper(a:IntRange,s:String, loopfun:(v:String)->String){
-        for(i in a){
-            println(loopfun(s))
+    fun looper(a:IntRange,s:String, loopfun:(v:String,a:Int)->String){
+        for(i in a step 2){
+            println(loopfun(s,i))
         }
     }
     fun printBig(a:List<Int>,big:(a:Int)->Unit){

@@ -8,8 +8,8 @@ object ActionController {
         }
 
         override fun loopY() {
-            dower.looper(1..10,"Looping") { a: String ->
-                a
+            dower.looper(1..10,"Looping",){a:String,b:Int->b
+                a+" Index $b and next Index is ${b+1}"
             }
         }
 
