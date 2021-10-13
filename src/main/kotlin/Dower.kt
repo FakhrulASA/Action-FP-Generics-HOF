@@ -12,4 +12,13 @@ class Dower {
         val x:List<Int> = a.toIntArray().sortedWith(Comparator.reverseOrder())
         big.invoke(x[0])
     }
+
+
+
+    fun detailer(name:String,cg:Float,year:Long,conLm:(String)->Unit){
+        conLm("Name of the Student: $name\nCGPA: $cg\nYear of Passing: $year\n")
+    }
+    fun detailerPrint(name:String,cg:Float,year:Long,conLm:(String)->String){
+        println(conLm("Name of the Student: $name\nCGPA: $cg\nYear of Passing: $year\n"))
+    }
 }

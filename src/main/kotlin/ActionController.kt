@@ -3,7 +3,7 @@ object ActionController {
     val actions=object : Actions{
         override fun addY() {
             dower.addLambda(20, 30) { a: Int, b: Int ->
-                a+b
+                a*b-2/3+2
             }
         }
 
@@ -19,5 +19,14 @@ object ActionController {
             }
         }
 
+        override fun detY() {
+            dower.detailer("Dohn Doe",3.9f,2020){
+                println(it)
+            }
+        }
+
+        override fun detPrintY() {
+            dower.detailerPrint("Dohn Doe",3.9f,2020) { a: String -> a }
+        }
     }
 }
