@@ -12,6 +12,7 @@ fun main() {
     actions.sortY()
     actions.detY()
     actions.detPrintY()
+    actions.makeString()
 
     /**
      * Generics
@@ -29,6 +30,12 @@ fun main() {
      * Star Projections
      */
     printArray(arrayOf("A",1,"B",true,false,"ANotor"))
+
+    /**
+     * Extension functions
+     */
+
+    println("Dave".addSomething())
 }
 
 

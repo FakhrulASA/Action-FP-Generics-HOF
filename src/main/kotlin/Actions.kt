@@ -4,4 +4,5 @@ interface Actions {
     fun sortY(){}
     fun detY(){}
     fun detPrintY(){}
+    fun makeString(){}
 }

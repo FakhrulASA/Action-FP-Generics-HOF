@@ -31,6 +31,14 @@ object ActionController {
             }
         }
 
+        override fun makeString() {
+            dower.makeString(10,{
+                it
+            },{a:Int,b:String->
+               println("This is the $a no index and the value is $b") 
+            })
+        }
+
         override fun detPrintY() {
             dower.detailerPrint("Dohn Doe", 3.9f, 2020) { a: String -> a }
         }
